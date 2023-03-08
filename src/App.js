@@ -7,21 +7,10 @@ import Skills from "./pages/skills/Skills";
 import Projects from "./pages/projects/Projects";
 import Notfound from "./pages/notfound/Notfound";
 import Navbar from "./components/Navbar";
-import Loader from "./components/Loader";
-import { useState, useEffect } from "react";
 function App() {
-  const [isLoading, setIsloading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsloading(false);
-    }, 2500);
-  });
 
   return (
-    <>
-      {isLoading ? (
-        <Loader />
-      ) : (
+   
         <BrowserRouter>
           <Navbar />
           <Routes>
@@ -34,8 +23,7 @@ function App() {
             <Route path="*" element={<Notfound />} />
           </Routes>
         </BrowserRouter>
-      )}
-    </>
+      
   );
 }
 

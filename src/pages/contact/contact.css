@@ -128,7 +128,7 @@
 
 .form-item {
     position: relative;
-    margin-bottom: 0.8rem;
+    margin-top:1rem;
 }
 
 label, input, textarea {
@@ -163,7 +163,7 @@ input:valid+label,
 input:focus+label,
 textarea:focus+label {
     font-size: clamp(13px, 1.3vw, 16px);
-    color: var(--blue-color-600);
+    color: var(--blue-color-100);
     top: -30px;
     transition:var(--transition);
 }

@@ -98,7 +98,7 @@ export const projects = [
   // },
 
   {
-    title: "FastTyping",
+    title: "Fast Typing",
     name: "fasttyping",
     image:
       "https://images.pexels.com/photos/2883510/pexels-photo-2883510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",

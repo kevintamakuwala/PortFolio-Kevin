@@ -78,22 +78,19 @@ img {
     color: var(--blue-color-100);
     width: fit-content;
     margin: 0 auto;
-    padding: 0.9rem 2rem;
+    padding: 0.9rem 1.5rem;
     background: var(--blue-color-300);
-    border-radius: 1.5rem;
+    /* border-radius: 1.5rem; */
     transition: var(--transition);
     cursor: pointer;
-
 }
 
 .lg:hover {
-    background: var(--color-secondary);
-    color: var(--blue-color-600);
-
+    background: #224776;
 }
 .btn.lg {
     padding: 1.2rem 3rem;
-    border-radius: 2rem;
+    /* border-radius: 2rem; */
     font-size: 1.1rem;
 }
 

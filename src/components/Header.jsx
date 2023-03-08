@@ -25,7 +25,7 @@ export const header = () => {
         <div className="main__header-right">
           <div className="main__header-circle"></div>
           <div className="main__header-image">
-            <img src={img} alt="logo" draggable="false" />
+            <img src={img} alt="Kevin" draggable="false" />
           </div>
         </div>
       </div>
