@@ -9,16 +9,7 @@ export const About = () => {
       setIsloading(false);
     }, 2500);
   });
-  return (
-   <>
-   
-      {isLoading ? <Loader></Loader>:
-   <div id="about">
-
-   </div>
-}
-   </>
-  );
+  return <>{isLoading ? <Loader></Loader> : <div></div>}</>;
 };
 
 export default About;
