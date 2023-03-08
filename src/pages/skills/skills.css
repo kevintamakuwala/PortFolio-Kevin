@@ -22,7 +22,9 @@
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
-
+.heading svg{
+    font-size: 2rem;
+}
 .skills__container {
     margin-inline: auto;
     width: var(--container-width-lg);
@@ -86,6 +88,12 @@
         font-size: 1.2rem;
     }
 }
+@media screen and (max-width:996px) {
+    .heading{
+        font-size: 1.6rem;
+       
+    }
+}
 
 @media screen and (max-width:990px) {
     .skills_container .row {
@@ -93,6 +101,9 @@
         margin: 1rem;
         padding: 2rem 0.2rem 2rem 0.2rem;
         gap: 1rem;
+    }
+    .heading{
+        margin: auto 1rem;
     }
 
     .skills_container .row .bar .info span {
@@ -118,14 +129,51 @@
     }
 }
 
-@media screen and (max-width:485px) {
-    html {
-        font-size: 0.6rem;
+@media screen and (max-width:521px) {
+    .heading{
+        font-size: 1.4rem;
     }
 }
-
+@media screen and (max-width:488px) {
+    .heading{
+        font-size: 1.2rem;
+        margin: 0.4rem;
+    }
+    .heading svg{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:430px) {
+    .heading,.heading svg{
+        font-size: 1rem;
+        margin: 0.2rem;
+    }
+}
 @media screen and (max-width:485px) {
+    /* html {
+        font-size: 0.6rem;
+    } */
     .skills_container .row .bar .info span {
         font-size: 10px;
+    }
+}
+@media screen and (max-width:488px) {
+    .heading{
+        font-size: 0.8rem;
+        margin: 0.35rem;
+    }
+    .heading svg{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:354px) {
+    .heading{
+        margin: auto 0.1rem auto 0.29rem;
+    }
+}
+@media screen and (max-width:346px) {
+    .heading{
+        margin: auto 0;
+        font-size:0.75rem;
     }
 }

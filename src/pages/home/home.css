@@ -62,7 +62,7 @@
 }
 @media screen and (max-width:760px) {
     .main__header-container{
-      flex-direction: column-reverse;;
+      flex-direction: column-reverse;
     }
     .main__header-image img {
         width: 15rem;
@@ -70,7 +70,13 @@
     }
 }
 @media screen and (max-width:380px) {
+   
+    
     html{
         font-size: 0.8rem;
+    }
+    .main__header-container{
+        align-items: center;
+        justify-content: center;
     }
 }

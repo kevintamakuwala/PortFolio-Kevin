@@ -6,7 +6,7 @@ export const header = () => {
   return (
     <header className="main__header">
       <div className="container main__header-container">
-        <div className="main__header-left">
+        <div className="main__header-left" id="top">
           <h3 >#GoodVibesOnly💫</h3>
           <h1 style={{ cursor: "pointer" }}>
             <Link href="/">Kevin Tamakuwala</Link>

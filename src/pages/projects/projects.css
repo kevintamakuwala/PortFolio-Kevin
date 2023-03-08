@@ -132,7 +132,7 @@
 .tech-stack,.project-links__container {
     margin: 1rem auto;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 #button {
     color:var(--blue-color-500 );
@@ -187,16 +187,16 @@
     .title-projects
     {
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         flex-direction: column;
 
     }
     .tech-stack{
-        align-items: start;
+        align-items: flex-start;
         margin: 0.6rem 0;
         gap: 0.5rem;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: flex-start;
     }
 
     .news_hor img {
