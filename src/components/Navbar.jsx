@@ -11,7 +11,9 @@ export const Navbar = () => {
     <nav>
       <div className="container nav__container">
         <Link to="/" className="logo" onClick={() => setIsNavShowing(false)}>
-          {/* <img src={Logo} alt="logo" /> */}
+          <span>
+            Kevin <span style={{color:"var(--color-secondary)"}}>Tamakuwala</span>
+          </span>
         </Link>
         <ul
           className={`nav__links ${isNavShowing ? "show__nav" : "hide__nav"}`}

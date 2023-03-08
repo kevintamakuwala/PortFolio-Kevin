@@ -24,7 +24,10 @@ nav {
 }
 
 .logo {
-    width: 5rem;
+    width: 20rem;
+    /* height: 4rem; */
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
 }
 
 .nav__links {

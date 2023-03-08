@@ -19,11 +19,11 @@
     justify-content: center;
     overflow: hidden;
     /* font-family: "Montserrat", sans-serif; */
-    animation: cssload-breathe 4.55s ease infinite;
+    -moz-animation: cssload-breathe 4.55s ease infinite;
     -o-animation: cssload-breathe 4.55s ease infinite;
     -ms-animation: cssload-breathe 4.55s ease infinite;
     -webkit-animation: cssload-breathe 4.55s ease infinite;
-    -moz-animation: cssload-breathe 4.55s ease infinite;
+    animation: cssload-breathe 4.55s ease infinite;
 }
 
 @keyframes cssload-breathe {
