@@ -64,6 +64,9 @@
     .main__header-container{
       flex-direction: column-reverse;
     }
+    .main__header-left{
+        margin-bottom: 6rem;
+    }
     .main__header-image img {
         width: 15rem;
         height: auto;
