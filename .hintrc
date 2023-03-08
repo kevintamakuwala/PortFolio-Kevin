@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ],
+    "manifest-file-extension": "off",
+    "highest-available-document-mode": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "width: fit-content",
+          "margin-inline",
+          "height: fit-content",
+          "min-height: fit-content",
+          "backdrop-filter",
+          "user-select"
+        ]
+      }
+    ]
+  }
+}

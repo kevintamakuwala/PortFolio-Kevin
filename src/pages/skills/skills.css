@@ -1,0 +1,131 @@
+.skills {
+    background:
+        radial-gradient(circle at 55% 92%, #426691 0 12%, transparent 12.2%),
+        radial-gradient(circle at 94% 72%, #426691 0 10%, transparent 10.2%),
+        radial-gradient(circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%),
+        radial-gradient(circle at 0% 0%, #426691 0 40%, transparent 40.2%),
+        var(--blue-color-500);
+}
+
+.heading {
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.skills .heading span {
+    color: var(--color-secondary);
+}
+
+.skills h2 {
+    color: var(--blue-color-100);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.skills__container {
+    margin-inline: auto;
+    width: var(--container-width-lg);
+    max-width: 1920px;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.skills_container .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.skills_container .row .bar {
+    margin-bottom: 15px;
+    height: 10rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: var(--blue-color-600);
+    transition: var(--transition);
+    height: 10rem;
+}
+
+.skills_container .row .bar:hover {
+    box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+    transition: var(--transition);
+    background-color: var(--blue-color-400) !important;
+}
+
+.skills_container .row .bar:hover span {
+    transition: var(--transition);
+    color: var(--blue-color-100);
+}
+
+.skills_container .row .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills_container .row .bar .info img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.skills_container .row .bar .info span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "Poppins";
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width:1067px) {
+    .skills_container .row .bar .info span {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .skills_container .row {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+
+    .skills_container .row .bar .info span {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:735px) {
+    .skills_container .row .bar .info span {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:645px) {
+    .skills_container .row .bar .info span {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:610px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:485px) {
+    html {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width:485px) {
+    .skills_container .row .bar .info span {
+        font-size: 10px;
+    }
+}
