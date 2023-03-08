@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import img from "../images/kevin.png";
 import "../pages/home/home.css";
+
 export const header = () => {
   return (
-    <header className="main__header">
+    <>
+    <header  className=" main__header">
       <div className="container main__header-container">
         <div className="main__header-left" id="top">
           <h3 >#GoodVibesOnly💫</h3>
@@ -28,6 +30,7 @@ export const header = () => {
         </div>
       </div>
     </header>
+    </>
   );
 };
 

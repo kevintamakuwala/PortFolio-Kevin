@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.cssload-loading {
+    height: 100vh;
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    background: black;
+    right: 0;
+    color: var(--blue-color-500);
+    font-size: 3em;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* font-family: "Montserrat", sans-serif; */
+    animation: cssload-breathe 4.55s ease infinite;
+    -o-animation: cssload-breathe 4.55s ease infinite;
+    -ms-animation: cssload-breathe 4.55s ease infinite;
+    -webkit-animation: cssload-breathe 4.55s ease infinite;
+    -moz-animation: cssload-breathe 4.55s ease infinite;
+}
+
+@keyframes cssload-breathe {
+    0% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+
+    30% {
+        color: transparent;
+    }
+
+    50% {
+        letter-spacing: 70px;
+        font-size: 0;
+        text-shadow: 0 0 4px white;
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    100% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+}
+
+@-o-keyframes cssload-breathe {
+    0% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+
+    30% {
+        color: transparent;
+    }
+
+    50% {
+        letter-spacing: 70px;
+        font-size: 0;
+        text-shadow: 0 0 4px white;
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    100% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+}
+
+@-ms-keyframes cssload-breathe {
+    0% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+
+    30% {
+        color: transparent;
+    }
+
+    50% {
+        letter-spacing: 70px;
+        font-size: 0;
+        text-shadow: 0 0 4px white;
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    100% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+}
+
+@-webkit-keyframes cssload-breathe {
+    0% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+
+    30% {
+        color: transparent;
+    }
+
+    50% {
+        letter-spacing: 70px;
+        font-size: 0;
+        text-shadow: 0 0 4px white;
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    100% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+}
+
+@-moz-keyframes cssload-breathe {
+    0% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+
+    30% {
+        color: transparent;
+    }
+
+    50% {
+        letter-spacing: 70px;
+        font-size: 0;
+        text-shadow: 0 0 4px white;
+    }
+
+    60% {
+        color: transparent;
+    }
+
+    100% {
+        letter-spacing: 0;
+        text-shadow: 0 0 1px white;
+    }
+}

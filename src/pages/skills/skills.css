@@ -150,9 +150,6 @@
     }
 }
 @media screen and (max-width:485px) {
-    /* html {
-        font-size: 0.6rem;
-    } */
     .skills_container .row .bar .info span {
         font-size: 10px;
     }
