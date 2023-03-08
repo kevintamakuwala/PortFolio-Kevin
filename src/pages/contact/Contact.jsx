@@ -3,8 +3,19 @@ import "./contact.css";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
+
+import { useState, useEffect } from "react";
+import Loader from "../../components/Loader";
 export const Contact = () => {
+  const [isLoading, setIsloading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsloading(false);
+    }, 2500);
+  });
   return (
+    <>
+      {isLoading ? <Loader></Loader>:
     <section className="contact__container" id="contact">
       <div className="contact-box">
         <div className="contact-links">
@@ -51,7 +62,8 @@ export const Contact = () => {
           </form>
         </div>
       </div>
-    </section>
+    </section>}
+    </>
   );
 };
 
