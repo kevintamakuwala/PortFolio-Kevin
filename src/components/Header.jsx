@@ -9,7 +9,6 @@ import { SiGithub, SiLeetcode } from "react-icons/si";
 import { SiCodechef } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 
 export const Header = () => {
