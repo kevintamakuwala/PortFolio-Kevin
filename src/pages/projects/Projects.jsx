@@ -31,7 +31,7 @@ const Projects = () => {
         <div className="projects__container">
           <h2>
             <AiOutlineFundProjectionScreen />
-            Projects
+            Projects 
           </h2>
 
           <div className="projects_container">
