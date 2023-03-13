@@ -28,7 +28,11 @@ const Projects = () => {
       {isLoading ? (
         <Loader></Loader>
       ) : (
-        <div className="projects__container">
+        <div className="projects__container"
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        >
           <h2>
             <AiOutlineFundProjectionScreen />
             Projects 

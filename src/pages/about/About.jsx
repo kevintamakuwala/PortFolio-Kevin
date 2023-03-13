@@ -17,22 +17,32 @@ export const About = () => {
   };
   return (
     <>
-      {0 ? (
+      {isLoading ? (
         <Loader></Loader>
       ) : (
-        <header className="skills skills__container">
-          <h2 className="heading__container">
-            <BsInfoCircle />
-            about me
-          </h2>
-
+        <header
+          className="skills skills__container"
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div
+           
+          >
+            <h2 className="heading__container">
+              <BsInfoCircle />
+              about me
+            </h2>
+          </div>
           <div className="about__container" style={mystyle}>
             <div
               data-aos="fade-right"
               data-aos-easing="linear"
               data-aos-duration="1500"
             >
-              <div className="about-left">
+              <div className="about-left"
+              
+              >
                 <p>
                   Hello and welcome to my portfolio! I am passionate about
                   designing and building beautiful, functional websites that
