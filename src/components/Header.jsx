@@ -4,7 +4,6 @@ import img from "../images/kevin.png";
 import "../pages/home/home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 import { SiGithub, SiLeetcode } from "react-icons/si";
 import { SiCodechef } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
@@ -17,6 +16,18 @@ export const Header = () => {
       once: true,
     });
   }, []);
+
+  const onButtonClick = () => {
+    fetch('Kevin_Tamakuwala_Resume.pdf').then(response => {
+        response.blob().then(blob => {
+            const fileURL = window.URL.createObjectURL(blob);
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Kevin_Tamakuwala_Resume.pdf';
+            alink.click();
+        })
+    })
+}
   return (
     <>
       <header className=" main__header">
@@ -36,7 +47,7 @@ export const Header = () => {
                 Competitive Programmer <br />
                 Tech Enthusiast
               </p>
-              <Link to="/" className="btn lg ">
+              <Link to="/" className="btn lg "onClick={onButtonClick}>
                 Download Resume
               </Link>
               <br />
