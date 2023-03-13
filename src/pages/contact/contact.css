@@ -99,7 +99,6 @@
     height: 100%;
     width: 100%;
     color:rgb(212, 47, 47);
-    
 }
 .github{
     color: rgb(0, 0, 0);
@@ -107,7 +106,7 @@
 .mail{
     color:rgb(12, 128, 31);
 }
-.link a svg {
+.link a svg ,.socials svg{
     width: 45px;
     height: 45px;
     filter:
@@ -116,11 +115,11 @@
     user-select: none;
 }
 
-.link a svg:hover {
+.link a svg:hover,.socials svg:hover {
     transform: scale(1.1, 1.1);
 }
 
-.link a svg:active {
+.link a svg:active,.socials svg:active {
     transform: scale(1.1, 1.1);
     filter:
         hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);

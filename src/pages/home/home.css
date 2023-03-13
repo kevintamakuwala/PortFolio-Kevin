@@ -10,7 +10,7 @@
     height: 100%;
     display: flex;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     gap: 4rem;
 }
@@ -22,7 +22,7 @@
     font-weight: 400;
 }
 
-.main__header-left p {
+.main__header-left p{
     margin: 1rem 0 3.5rem;
     font-size: 1.3rem;
 }
@@ -31,9 +31,44 @@
     display: grid;
     place-items: center;
     position: relative;
-
 }
-
+.socials{
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:2rem;
+}
+#github{
+    color:white;  
+    cursor:pointer;  
+}
+#codechef{
+    color:#80e8fd;
+    cursor:pointer;
+}
+#linkedin{
+    color:rgb(212, 47, 47);
+    cursor:pointer;
+}
+#instagram{
+    color: #27a72c;
+    cursor:pointer;
+}
+#leetcode{
+    color:#636363;
+    cursor:pointer;
+}
+#gfg{
+    color:rgb(145, 3, 124);
+    cursor:pointer;
+}
+@media screen and (max-width:533px) {
+    .socials{
+        grid-template-columns: repeat(3,1fr);
+        /* justify-content: left; */
+        gap:2rem;
+    }
+}
 .main__header-circle {
     width: 25rem;
     height: 25rem;

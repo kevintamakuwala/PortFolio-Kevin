@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import Loader from "../../components/Loader";
 import img from "./../../images/code.png";
 import { BsInfoCircle } from "react-icons/bs";
+
+
+
+
 export const About = () => {
   const [isLoading, setIsloading] = useState(true);
   useEffect(() => {
