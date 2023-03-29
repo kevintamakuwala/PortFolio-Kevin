@@ -33,7 +33,7 @@
     position: relative;
 }
 .socials{
-    margin: 5rem 0;
+    margin: 4rem 0;
     display: grid;
     grid-template-columns: repeat(6,1fr);
     gap:2rem;
@@ -66,8 +66,7 @@
 @media screen and (max-width:533px) {
     .socials{
         grid-template-columns: repeat(3,1fr);
-        /* justify-content: left; */
-        gap:2rem;
+        gap:1.5rem 0;
     }
 }
 .main__header-circle {
@@ -109,8 +108,7 @@
     }
 }
 @media screen and (max-width:380px) {
-   
-    
+
     html{
         font-size: 0.8rem;
     }

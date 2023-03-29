@@ -88,13 +88,6 @@
         font-size: 1.2rem;
     }
 }
-@media screen and (max-width:996px) {
-    .heading{
-        font-size: 1.6rem;
-       
-    }
-}
-
 @media screen and (max-width:990px) {
     .skills_container .row {
         grid-template-columns: repeat(3, 1fr);
@@ -128,49 +121,8 @@
         font-size: 0.8rem;
     }
 }
-
-@media screen and (max-width:521px) {
-    .heading{
-        font-size: 1.4rem;
-    }
-}
-@media screen and (max-width:488px) {
-    .heading{
-        font-size: 1.2rem;
-        margin: 0.4rem;
-    }
-    .heading svg{
-        font-size: 1.2rem;
-    }
-}
-@media screen and (max-width:430px) {
-    .heading,.heading svg{
-        font-size: 1rem;
-        margin: 0.2rem;
-    }
-}
 @media screen and (max-width:485px) {
     .skills_container .row .bar .info span {
         font-size: 10px;
-    }
-}
-@media screen and (max-width:488px) {
-    .heading{
-        font-size: 0.8rem;
-        margin: 0.35rem;
-    }
-    .heading svg{
-        font-size: 1.2rem;
-    }
-}
-@media screen and (max-width:354px) {
-    .heading{
-        margin: auto 0.1rem auto 0.29rem;
-    }
-}
-@media screen and (max-width:346px) {
-    .heading{
-        margin: auto 0;
-        font-size:0.75rem;
     }
 }

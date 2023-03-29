@@ -208,10 +208,6 @@ figcaption p {
         flex-direction: column;
     }
 
-    .projects__container {
-        width: 70%;
-    }
-
     .title-projects {
         display: flex;
         align-items: flex-start;
@@ -247,10 +243,6 @@ figcaption p {
 @media screen and (max-width:735px) {
     .news_hor {
         flex-direction: column;
-    }
-
-    .projects__container {
-        width: 70%;
     }
 
     .news_hor img {

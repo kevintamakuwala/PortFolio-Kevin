@@ -33,7 +33,7 @@ export const Skills = () => {
           data-aos-duration="1500"
         >
           <h2 className="heading">
-            <GiCutDiamond /> Skills &amp; <span>Abilities</span>
+            <GiCutDiamond /> Tech Stack
           </h2>
           <div
             className="skills_container"
