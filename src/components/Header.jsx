@@ -74,7 +74,7 @@ export const Header = () => {
                   <SiLeetcode id="leetcode" />
                 </a>
                 <a
-                  href="https://auth.geeksforgeeks.org/user/kevintamakuwala16/practice"
+                  href="https://auth.geeksforgeeks.org/user/kevintamakuwala16/profile"
                   target="_blank"
                   rel="noreferrer"
                 >
