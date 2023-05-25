@@ -171,7 +171,8 @@ export const timelineElements = [
     title: "Member - CodeChef DDU Chapter",
     location: "Dharmsinh Desai University",
     description: [
-      "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
+      " Actively contributed to the growth and success of the chapter by participating in events, sharing knowledge, and fostering a supportive community of coders.",
+      " Opportunities to enhance coding abilities, learn from peers, connect with like-minded individuals, and contribute to a vibrant coding community.",
     ],
     // description2:"",
     // buttonText: "View Completion Letter",
