@@ -1,0 +1,143 @@
+.experience__container {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: rgb(53, 53, 53);
+    margin-inline: auto;
+    width: var(--container-width-lg);
+    max-width: 1920px;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: auto;
+    margin-top: 10rem;
+    background:
+        radial-gradient(circle at 55% 92%, #426691 0 12%, transparent 12.2%),
+        radial-gradient(circle at 94% 72%, #426691 0 10%, transparent 10.2%),
+        radial-gradient(circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%),
+        radial-gradient(circle at 0% 0%, #426691 0 40%, transparent 40.2%),
+        var(--blue-color-500);
+}
+
+.experience__container h2 {
+    color: var(--blue-color-100);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    display: flex;
+    margin: 2rem 0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.experience-title span {
+    color: var(--blue-color-100)
+}
+
+.experience-title svg {
+    color: var(--color-secondary)
+}
+
+
+.experience-title {
+    font-family: "Bebas Neue", sans-serif;
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: var(--blue-color-100);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding-left: 3.5rem;
+}
+
+
+.vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+        0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    padding: 2em 3em !important;
+    background: var(--blue-color-300);
+    color: aliceblue
+}
+
+.vertical-timeline-element-title {
+    color: var(--color-secondary)
+}
+
+.vertical-timeline-element-subtitle {
+    color: var(--blue-color-200) !important;
+}
+
+.date {
+    color: var(--blue-color-100) !important;
+}
+
+#description {
+    margin: 1.5rem 0 2rem 0;
+    color: var(--blue-color-100) !important;
+}
+
+#description2 {
+    margin: -1rem 0 1rem 0;
+    color: var(--blue-color-100) !important;
+}
+
+.experience-button {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: white !important;
+}
+@media screen and (max-width:426px) {
+    .experience-button{
+        font-size: 0.7rem;
+    }
+}@media screen and (max-width:386px){
+    .experience-button{
+        font-size: 0.5rem;
+    }
+
+}
+/* .workButton {
+    color: var(--blue-color-500);
+    cursor: pointer;
+    background: var(--color-secondary);
+}
+
+.workButton:hover {
+    background-color: #0ac593;
+}
+
+.schoolButton {
+    background-color: #f9c74f;
+}
+
+.schoolButton:hover {
+    background-color: #f3bc3c;
+} */
+@media screen and (max-width:1169px) {
+    .experience-title {
+        padding-left: 2.5rem 
+    }
+}
+@media screen and (max-width:892px) {
+    .experience-title {
+        padding-left: 2.3rem ;
+    }
+}
+@media screen and (max-width:697px) {
+    .experience-title {
+        padding-left: 2rem ;
+    }
+}
+@media screen and (max-width:482px) {
+    .experience__container h2{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    .vertical-timeline-element-date {
+        display: block !important;
+        float: none !important;
+        color: rgb(44, 44, 44);
+        margin-top: 1.5em;
+    }
+}

@@ -4,8 +4,8 @@ export const links = [
     path: "/",
   },
   {
-    name: "About",
-    path: "/about",
+    name: "Experience",
+    path: "/experience",
   },
   {
     name: "Projects",
@@ -14,6 +14,10 @@ export const links = [
   {
     name: "Skills",
     path: "/skills",
+  },
+  {
+    name: "About",
+    path: "/about",
   },
   {
     name: "Contact",
@@ -126,5 +130,76 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/kevintamakuwala/ToDo",
     demo: "https://doitkevin.netlify.app/",
+  },
+];
+
+export const timelineElements = [
+  {
+    id: 1,
+    title: "Trakky Services - SDE Intern",
+    location: "Remote",
+    description: [
+      "Developed the entire user and admin frontend using React.Js, CSS, MongoDB, Redux, and Material-UI.",
+      "Rendered API calls from the backend server, making it dynamic.",
+
+      "Maintained the highest quality of code and worked on various needs of the employer.",
+      "Interacted with clients and solved numerous issues regarding user experience and interactivity.",
+    ],
+    // description2:"",
+    // buttonText: "View Completion Letter",
+    // link:"",
+    date: "May 2023 - Present",
+    icon: "work",
+  },
+  {
+    id: 2,
+    title: "Team Lead - DUHacks2.0 Hackathon",
+    location: "Dharmsinh Desai University",
+    description: [
+      "Created a marketplace between consumer and farmers to buy/sell fresh farm products and also provided farmers with productivity packages.",
+      "Tech: React.Js, CSS, PHP, HTML,Bootstrap.",
+      "Outcome: Secured 8th position among hundreds of teams particpated all around the country.",
+    ],
+    // description2:"",
+    buttonText: "View Project",
+    link: "https://github.com/kevintamakuwala/DUHACKS2.0",
+    date: "February 2023",
+    icon: "work",
+  },
+  {
+    id: 3,
+    title: "Member - CodeChef DDU Chapter",
+    location: "Dharmsinh Desai University",
+    description: [
+      "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
+    ],
+    // description2:"",
+    // buttonText: "View Completion Letter",
+    // link:"",
+    date: "April 2023 - Present",
+    icon: "work",
+  },
+  {
+    id: 4,
+    title: "Dharmsinh Desai University",
+    location: "Nadiad, India",
+    description: ["BTech. in Information Technology (CPI : 9.15 / 10.0)"],
+    description2:
+      "Courses: Data Structures, Analysis Of Algorithms, Operating Systems, Microprocessors, Networking, Databases.",
+    // buttonText: "View Completion Letter",
+    // link:"",
+    date: "2021 - 2025",
+    icon: "school",
+  },
+  {
+    id: 5,
+    title: "PP Savani High School",
+    location: "Surat, India",
+    description: ["Class 12 (Percentage : 91.0)"],
+    description2: "Courses: Mathematics, Physics, Chemistry, C++, Java.",
+    // buttonText: "View Completion Letter",
+    // link:"",
+    date: "2020 - 2021",
+    icon: "school",
   },
 ];
