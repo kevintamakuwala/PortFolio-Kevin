@@ -10,7 +10,6 @@
     height: 100%;
     display: flex;
     grid-template-columns: 1fr 1fr;
-    /* align-items: center; */
     justify-content: space-between;
     gap: 4rem;
 }
@@ -98,6 +97,8 @@
 @media screen and (max-width:760px) {
     .main__header-container{
       flex-direction: column-reverse;
+      
+    align-items: center;
     }
     .main__header-left{
         margin-bottom: 6rem;

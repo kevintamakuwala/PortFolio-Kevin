@@ -18,8 +18,8 @@
     --blue-color-500: hsl(225, 48%, 18%);
     --blue-color-600: hsl(0, 0%, 0%);
     --color-secondary: hsl(49, 69%, 53%);
-    --container-width-lg: 80%;
-    --container-width-md: 70%;
+    --container-width-lg: 90%;
+    --container-width-md: 87%;
     --transition: all 500ms ease;
 }
 

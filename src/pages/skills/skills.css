@@ -39,17 +39,17 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1rem 3rem;
 }
 
 .skills_container .row .bar {
     margin-bottom: 15px;
-    height: 10rem;
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     background: var(--blue-color-600);
     transition: var(--transition);
     height: 10rem;
+    padding: 0 auto;
 }
 
 .skills_container .row .bar:hover {
@@ -124,5 +124,8 @@
 @media screen and (max-width:485px) {
     .skills_container .row .bar .info span {
         font-size: 10px;
+    }
+    .skills_container .row .bar{
+        height: 8rem;
     }
 }
