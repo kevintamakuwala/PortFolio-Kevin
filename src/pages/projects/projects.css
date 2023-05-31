@@ -7,8 +7,6 @@
 }
 
 .projects__container {
-
-
     margin-inline: auto;
     width: var(--container-width-lg);
     max-width: 1920px;
@@ -71,8 +69,7 @@
     object-fit: cover;
 }
 
-.news_hor:hover img,
-.news_hor.hover img {
+.news_hor img:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }

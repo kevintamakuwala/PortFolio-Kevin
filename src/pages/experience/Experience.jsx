@@ -42,7 +42,7 @@ const Experience = () => {
         >
           <h2 className="experience-title">
             <BsGraphUpArrow />
-            <span>Experience</span>
+            <div>Experience</div>
           </h2>
           <VerticalTimeline>
             {timelineElements.map((element) => {

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GoThreeBars } from "react-icons/go";
 import { MdOutlineClose } from "react-icons/md";
 import { links } from "../data";
@@ -7,12 +7,38 @@ import "./navbar.css";
 export const Navbar = () => {
   const [isNavShowing, setIsNavShowing] = useState(false);
 
+  // navbar hide/show on scroll starts
+  const [show, setShow] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY < lastScrollY || lastScrollY <= 70) {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
+
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+  // navbar hide/show on scroll ends
   return (
-    <nav>
-      <div className="container nav__container">
+    <nav className={`${show && "hidden"}`}>
+      <div className="container nav__container ">
         <Link to="/" className="logo" onClick={() => setIsNavShowing(false)}>
           <span>
-            Kevin <span style={{color:"var(--color-secondary)"}}>Tamakuwala</span>
+            Kevin{" "}
+            <span style={{ color: "var(--color-secondary)" }}>Tamakuwala</span>
           </span>
         </Link>
         <ul

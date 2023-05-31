@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 import Loader from "../../components/Loader";
 
 const Projects = () => {
-
   const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
@@ -28,14 +27,15 @@ const Projects = () => {
       {isLoading ? (
         <Loader></Loader>
       ) : (
-        <div className="projects__container"
-        data-aos="zoom-in"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        <div
+          className="projects__container"
+          data-aos="zoom-in"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
         >
           <h2>
             <AiOutlineFundProjectionScreen />
-            Projects 
+            Projects
           </h2>
 
           <div className="projects_container">
@@ -47,8 +47,9 @@ const Projects = () => {
                       data-aos="fade-up"
                       data-aos-easing="linear"
                       data-aos-duration="1250"
+                      key={index}
                     >
-                      <figure key={index} className="news_hor">
+                      <figure className="news_hor">
                         <img
                           src={require(`./../../images/${name}.png`)}
                           alt=""

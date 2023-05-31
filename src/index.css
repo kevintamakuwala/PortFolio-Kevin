@@ -30,7 +30,6 @@ body {
     overflow-x: hidden;
     background: var(--blue-color-600);
 }
-
 .container {
     margin-inline: auto;
     width: var(--container-width-lg);

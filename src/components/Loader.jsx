@@ -4,7 +4,7 @@ const Loader = () => {
     
   return (
     <>
-      <div class="cssload-loading">Kevin Tamakuwala</div>
+      <div className="cssload-loading">Kevin Tamakuwala</div>
     </>
   );
 };
