@@ -139,7 +139,7 @@ export const timelineElements = [
     title: "Trakky Services - SDE Intern",
     location: "Remote",
     description: [
-      "Developed the entire user and admin frontend using React.Js, CSS, MongoDB, Redux, and Material-UI.",
+      "Developed the entire user and admin frontend using React.Js, CSS, Redux, and Material-UI.",
       "Rendered API calls from the backend server, making it dynamic.",
 
       "Maintained the highest quality of code and worked on various needs of the employer.",
