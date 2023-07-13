@@ -148,7 +148,7 @@ export const timelineElements = [
     // description2:"",
     // buttonText: "View Completion Letter",
     // link:"",
-    date: "May 2023 - Present",
+    date: "May 2023 - July 2023",
     icon: "work",
   },
   {
