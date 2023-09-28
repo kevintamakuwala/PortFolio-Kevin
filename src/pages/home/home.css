@@ -63,6 +63,10 @@
     cursor:pointer;
     height: 3.1rem;
     width: 3.1rem;
+    transition: .3s;
+}
+#codeforces:hover{
+    scale: 1.1;
 }
 @media screen and (max-width:533px) {
     .socials{
