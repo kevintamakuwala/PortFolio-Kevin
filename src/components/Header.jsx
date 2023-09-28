@@ -6,9 +6,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { SiGithub, SiLeetcode } from "react-icons/si";
 import { SiCodechef } from "react-icons/si";
-import { SiGeeksforgeeks } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
+import Codeforces  from "./../images/codeforces.svg";
 
 export const Header = () => {
   useEffect(() => {
@@ -18,16 +18,16 @@ export const Header = () => {
   }, []);
 
   const onButtonClick = () => {
-    fetch('Kevin_Tamakuwala_Resume.pdf').then(response => {
-        response.blob().then(blob => {
-            const fileURL = window.URL.createObjectURL(blob);
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'Kevin_Tamakuwala_Resume.pdf';
-            alink.click();
-        })
-    })
-}
+    fetch("Kevin_Tamakuwala_Resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Kevin_Tamakuwala_Resume.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <>
       <header className=" main__header">
@@ -47,11 +47,22 @@ export const Header = () => {
                 Competitive Programmer <br />
                 Tech Enthusiast
               </p>
-              <Link to="/" className="btn lg "onClick={onButtonClick}>
+              <Link to="/" className="btn lg " onClick={onButtonClick}>
                 Download Resume
               </Link>
               <br />
               <div className="socials">
+                <a
+                  href="https://codeforces.com/profile/kevintamakuwala16/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {/* <SiCodeforces/> */}
+                  <img src={Codeforces} alt="Codeforces" id="codeforces"
+                 
+                  />
+                </a>
+
                 <a
                   href="https://github.com/kevintamakuwala/"
                   target="_blank"
@@ -73,13 +84,7 @@ export const Header = () => {
                 >
                   <SiLeetcode id="leetcode" />
                 </a>
-                <a
-                  href="https://auth.geeksforgeeks.org/user/kevintamakuwala16/profile"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <SiGeeksforgeeks id="gfg" />
-                </a>
+
                 <a
                   href="https://www.linkedin.com/in/kevintamakuwala/"
                   target="_blank"

@@ -58,9 +58,11 @@
     color:#636363;
     cursor:pointer;
 }
-#gfg{
+#codeforces{
     color:rgb(145, 3, 124);
     cursor:pointer;
+    height: 3.1rem;
+    width: 3.1rem;
 }
 @media screen and (max-width:533px) {
     .socials{
@@ -83,7 +85,7 @@
 }
 
 .main__header-image img {
-    cursor: pointer;
+   cursor: pointer;
    border-bottom-left-radius: 50%;
    border-bottom: 7px solid var(--blue-color-200);
    border-bottom-right-radius: 50%;
