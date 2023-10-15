@@ -75,12 +75,11 @@
     }
 }
 .main__header-circle {
-    width: 25rem;
-    height: 25rem;
     background: linear-gradient(75deg, #9d9a9a, transparent);
     border-radius: 5%;
     position: absolute;
     filter: blur(70px);
+
     transition: var(--transition);
 }
 
@@ -89,20 +88,22 @@
 }
 
 .main__header-image img {
-   cursor: pointer;
-   border-bottom-left-radius: 50%;
-   border-bottom: 7px solid var(--blue-color-200);
-   border-bottom-right-radius: 50%;
-   height: 20rem;
-   width: auto;
+    margin: 0 5rem;
+    cursor: pointer;
+    height: 26rem;
+    width: 17rem;
+    border: 0.25rem solid #0c193a;
+    border-radius: 16%;
+    box-shadow: 2rem 0rem 25rem 0rem;
 }
 
 .main__header-right:hover .main__header-circle {
     filter: blur(55px);
 }
-@media screen and (max-width:760px) {
+@media screen and (max-width:882px) {
     .main__header-container{
       flex-direction: column-reverse;
+      gap:4rem;
       
     align-items: center;
     }

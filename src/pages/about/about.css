@@ -4,6 +4,7 @@
     padding: 2rem;
     background: var(--blue-color-300);
 }
+
 .heading__container {
     color: var(--blue-color-100);
     letter-spacing: 0.2rem;
@@ -16,6 +17,7 @@
     gap: 1rem;
     text-align: center;
 }
+
 .heading__container svg {
     color: var(--color-secondary)
 }
@@ -54,14 +56,16 @@
         margin-top: 0;
     }
 }
-@media screen and (max-width:510px){
-    .about-right img{
+
+@media screen and (max-width:510px) {
+    .about-right img {
         width: 14em;
         height: auto;
     }
 }
-@media screen and (max-width:387px){
-    .heading__container{
+
+@media screen and (max-width:387px) {
+    .heading__container {
         font-size: 1.5rem;
     }
 }

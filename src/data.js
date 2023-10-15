@@ -9,7 +9,7 @@ export const links = [
   },
   {
     name: "Projects",
-    path: "/Projects",
+    path: "/projects",
   },
   {
     name: "Skills",
@@ -168,16 +168,15 @@ export const timelineElements = [
   },
   {
     id: 3,
-    title: "Member - CodeChef DDU Chapter",
+    title: "Core Commitee Member - Decrypters CP Club",
     location: "Dharmsinh Desai University",
     description: [
-      "I actively contribute to the growth and success of the chapter by participating in events, sharing knowledge, and fostering a supportive community of coders.",
-      "I create opportunities to enhance coding abilities, learn from peers, connect with like-minded individuals, and contribute to a vibrant coding community.",
+      "Role: I instructed Recursion and Backtracking to a group of 50+ competitive programming enthusiasts, playing a pivotal role in the club\'s development. My contributions included Problem Setting, knowledge dissemination, event management and nurturing a collaborative coder community, all of which significantly contributed to its success.",
     ],
     // description2:"",
     // buttonText: "View Completion Letter",
     // link:"",
-    date: "April 2023 - Present",
+    date: "July 2023 - October 2023",
     icon: "work",
   },
   {
