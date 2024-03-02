@@ -125,3 +125,27 @@
         justify-content: center;
     }
 }
+.down-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    color: #ecf0f1;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s;
+    visibility: visible; /* Initial visibility */
+  }
+  
+  /* Media query to hide on smaller screens */
+  @media (max-width: 768px) {
+    .down-arrow {
+      display: none;
+    }
+  }

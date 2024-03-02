@@ -5,6 +5,9 @@ import { useState, useEffect } from "react";
 import Loader from "../../components/Loader";
 import Experience from "./../experience/Experience";
 import Projects from "./../projects/Projects";
+import Skills from "../skills/Skills";
+import Contact from "../contact/Contact";
+import ScrollToTop from "../../components/ScrollToTop";
 
 export const Home = () => {
   const [isLoading, setIsloading] = useState(true);
@@ -20,6 +23,11 @@ export const Home = () => {
       ) : (
         <>
           <Header />
+          <ScrollToTop />
+          <Experience/>
+          <Projects/>
+          <Skills/>
+          <Contact/>
         </>
       )}
     </>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./notfound.css";
+import {Link} from "react-router-dom"
 const Notfound = () => {
   return (
     
@@ -11,11 +12,11 @@ const Notfound = () => {
           <h4 data-text="Opps! Page not found">Opps! Page not found</h4>
           <p>
             Sorry, the page you're looking for doesn't exist. If you think
-            something is broken, report a problem.
+            something is broken, Contact me.
           </p>
           <div className="btns">
-            <a href="/" id="l1" >Return Home</a>
-            <a href="/" id="l2" >Report Problem</a>
+            <Link to="/" id="l1" >Return Home</Link>
+            <Link to="/contact" id="l2" >Report a Problem</Link>
           </div>
         </div>
       </div>

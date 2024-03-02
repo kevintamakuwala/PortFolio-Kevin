@@ -20,16 +20,16 @@ export const Skills = () => {
         id="skills"
         data-aos="zoom-in"
         data-aos-easing="linear"
-        data-aos-duration="1500"
+        data-aos-duration="500"
       >
         <h2 className="heading">
           <GiCutDiamond /> Tech Stack
         </h2>
         <div
           className="skills_container"
-          data-aos="zoom-in"
+          data-aos="fade-up"
           data-aos-easing="linear"
-          data-aos-duration="2500"
+          data-aos-duration="1000"
         >
           <div className="row">
             {skills.map((skills, index) => {
@@ -38,9 +38,9 @@ export const Skills = () => {
                   <div
                     className="bar"
                     key={index}
-                    data-aos="zoom-in"
-                    data-aos-easing="linear"
-                    data-aos-duration="15500"
+                    // data-aos="fade-up"
+                    // data-aos-easing="linear"
+                    // data-aos-duration="100"
                   >
                     <div className="info">
                       <img src={skills.icon} alt={skills.name} />

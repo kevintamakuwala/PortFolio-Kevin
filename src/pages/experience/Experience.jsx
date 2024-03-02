@@ -29,7 +29,7 @@ const Experience = () => {
         className="experience__container"
         data-aos="zoom-in"
         data-aos-easing="linear"
-        data-aos-duration="700"
+        data-aos-duration="500"
       >
         <h2 className="experience-title">
           <BsGraphUpArrow />

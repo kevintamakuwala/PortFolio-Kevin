@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import img from "../images/kevin.jpg";
 import "../pages/home/home.css";
@@ -8,14 +8,40 @@ import { SiGithub, SiLeetcode } from "react-icons/si";
 import { SiCodechef } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
-import Codeforces  from "./../images/codeforces.svg";
+import Codeforces from "./../images/codeforces.svg";
+import { FiChevronDown } from "react-icons/fi";
 
 export const Header = () => {
+  const [showDownArrow, setShowDownArrow] = useState(true);
+
+  const handleScroll = () => {
+    const scrolled = window.scrollY;
+
+    if (scrolled > 100) {
+      setShowDownArrow(false);
+    } else {
+      setShowDownArrow(true);
+    }
+  };
+
   useEffect(() => {
     AOS.init({
       once: true,
     });
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  const onDownArrowClick = () => {
+    window.scrollBy({
+      top: 700,
+      behavior: "smooth",
+    });
+  };
 
   const onButtonClick = () => {
     fetch("Kevin_Tamakuwala_Resume.pdf").then((response) => {
@@ -30,7 +56,7 @@ export const Header = () => {
   };
   return (
     <>
-      <header className=" main__header">
+      <header className="main__header">
         <div className="container main__header-container">
           <div
             data-aos="fade-right"
@@ -40,14 +66,13 @@ export const Header = () => {
             <div className="main__header-left" id="top">
               <h3>#GoodVibesOnly💫</h3>
               <h1 style={{ cursor: "pointer" }}>
-                <Link href="/">Kevin Tamakuwala</Link>
+                <Link to="/">Kevin Tamakuwala</Link>
               </h1>
               <p>
-                Web Developer <br />
+                Full Stack Developer <br />
                 Competitive Programmer <br />
-                Tech Enthusiast
               </p>
-              <Link to="/" className="btn lg " onClick={onButtonClick}>
+              <Link to="/" className="btn lg" onClick={onButtonClick}>
                 Download Resume
               </Link>
               <br />
@@ -57,10 +82,7 @@ export const Header = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {/* <SiCodeforces/> */}
-                  <img src={Codeforces} alt="Codeforces" id="codeforces"
-                 
-                  />
+                  <img src={Codeforces} alt="Codeforces" id="codeforces" />
                 </a>
 
                 <a
@@ -116,6 +138,16 @@ export const Header = () => {
           </div>
         </div>
       </header>
+
+      {showDownArrow && (
+        <div
+          className="down-arrow"
+          onClick={onDownArrowClick}
+          aria-label="Scroll Down"
+        >
+          <FiChevronDown />
+        </div>
+      )}
     </>
   );
 };

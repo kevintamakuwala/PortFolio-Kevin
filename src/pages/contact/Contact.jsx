@@ -116,7 +116,12 @@ export const Contact = () => {
                 data-aos-easing="linear"
                 data-aos-duration="52500"
               >
-                <textarea name="message" required defaultValue={""} />
+                <textarea
+                  name="message"
+                  required
+                  defaultValue={""}
+                  style={{ resize: "vertical" }}
+                />
                 <label>Message:</label>
               </div>
               <input

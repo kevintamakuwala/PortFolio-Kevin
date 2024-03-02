@@ -20,7 +20,7 @@ const Projects = () => {
         className="projects__container"
         data-aos="zoom-in"
         data-aos-easing="linear"
-        data-aos-duration="1500"
+        data-aos-duration="500"
       >
         <h2>
           <AiOutlineFundProjectionScreen />
@@ -35,7 +35,7 @@ const Projects = () => {
                   <div
                     data-aos="fade-up"
                     data-aos-easing="linear"
-                    data-aos-duration="1250"
+                    data-aos-duration="1000"
                     key={index}
                   >
                     <figure className="news_hor">
@@ -58,10 +58,28 @@ const Projects = () => {
 
                           <div className="project-links__container">
                             <div className="projects_links" id="link1">
-                              <a href={github}>Github</a>
+                              <a
+                                href={github}
+                                style={{
+                                  height: "100%",
+                                  width: "100%",
+                                }}
+                                target="__blank"
+                              >
+                                Github
+                              </a>
                             </div>
                             <div className="projects_links" id="link2">
-                              <a href={demo}>Demo</a>
+                              <a
+                                href={demo}
+                                style={{
+                                  height: "100%",
+                                  width: "100%",
+                                }}
+                                target="__blank"
+                              >
+                                Demo
+                              </a>
                             </div>
                           </div>
                           <footer></footer>
