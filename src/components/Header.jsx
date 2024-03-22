@@ -47,10 +47,10 @@ export const Header = () => {
     fetch("Kevin_Tamakuwala_Resume.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "Kevin_Tamakuwala_Resume.pdf";
-        alink.click();
+        // let alink = document.createElement("a");
+        // alink.href = fileURL;
+        // alink.download = "Kevin_Tamakuwala_Resume.pdf";
+        // alink.click();
       });
     });
   };
